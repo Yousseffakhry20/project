@@ -1,8 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import M from 'materialize-css'
 
 
 const SignUp=()=>{
+
+    M.AutoInit()
     return (
         <div className="myCard animate__animated animate__fadeIn">
         <div className="card authCard">

@@ -53,8 +53,10 @@ h6{
   border-radius: 10px;
 }
 
-.btn{
-  background-color: blue;
+.btn, .btn-large{
+
+  border-radius: 5px;
+  
 }
 
 /* html {
@@ -67,3 +69,73 @@ h6{
   background-position: center center;
   
 } */
+
+
+.transparentBG {
+  background-color: rgba(0,0,0,0);
+}
+
+
+.parallax-container{
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/92.jpg');
+background-color: #FFFFFF;
+background-repeat: no-repeat;
+/* background-position: center center; */
+background-size:cover; 
+
+
+
+}
+
+
+/* .parallax-container::before{
+ 
+    
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.1);
+
+
+} */
+.spaced{
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-evenly;
+  
+}
+/* h5{
+  
+  display: flex;
+  justify-content: center;
+} */
+
+
+.nav-wrapper{
+  background: transparent;
+}
+.page-footer{
+  margin-top: 30px;
+}
+
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+
+input[type="text"] {
+  width: 150px;
+  display: inline-block;
+}

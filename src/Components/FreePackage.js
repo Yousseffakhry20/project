@@ -35,7 +35,7 @@ const FreePackage=()=>{
                 
 
         var totalpersonnel=parseInt(personnel,10)+parseInt(futurePersonnel,10)
-        var Area=totalpersonnel*8;
+        var Area=totalpersonnel*6;
 
         
 
@@ -188,6 +188,8 @@ const FreePackage=()=>{
         <h6>Other Packages:</h6>
         <Link to="/packagex" className="waves-effect #212121 grey darken-4 btn">Package X</Link><br></br>
         <Link to="/packagey" className="waves-effect #212121 grey darken-4 btn">Package Y</Link>
+
+        <Link to="/roomform" class="waves-effect waves-light #212121 grey darken-4 btn" >Room Form</Link><br></br>
 
 
         </div>

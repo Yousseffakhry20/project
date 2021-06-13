@@ -12,6 +12,8 @@ import M from 'materialize-css'
 
 const PackageX=()=>{
 
+
+  M.AutoInit()
     
     const options = [
         { value: 'Basic', label: 'Basic' },
@@ -50,7 +52,7 @@ const PackageX=()=>{
             meterPrice=4500;
         }
         var totalpersonnel=parseInt(personnel,10)+parseInt(futurePersonnel,10)
-        var Area=totalpersonnel*3;
+        var Area=totalpersonnel*6;
 
         var Budget=Area*meterPrice
 
@@ -59,7 +61,7 @@ const PackageX=()=>{
 
         return{
             Area,
-            Budget,
+            Budget
             
         }
     
@@ -148,7 +150,7 @@ const PackageX=()=>{
         
         <Modal
             actions={[
-              <Button flat modal="close" node="button" >Close</Button>
+              <Button flat modal="close" node="button" className="modal-close">Close</Button>
             ]}
             bottomSheet={false}
             fixedFooter={false}
@@ -221,6 +223,8 @@ const PackageX=()=>{
         <h6>Other Packages:</h6>
         
         <Link to="/packagey" class="waves-effect waves-light #212121 grey darken-4 btn" >Package Y</Link><br></br>
+        
+        <Link to="/roomform" class="waves-effect waves-light #212121 grey darken-4 btn" >Room Form</Link><br></br>
 
 
 

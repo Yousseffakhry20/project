@@ -10,18 +10,26 @@ import PackageX from './Components/PackageX'
 import SignUp from './Components/SignUp'
 import Login from './Components/Login'
 import Footer from './Components/Footer'
+import M from 'materialize-css'
+import RoomForm from './Components/RoomForm'
+import PriceRecommendation from './Components/PriceRecommendation'
+import Prediction from './Components/Prediction'
 
 
 
 
 
 function App() {
+
+  M.AutoInit()
+
   return(
     
     <BrowserRouter>
    
 
     <Navbar/>
+    
     <Route exact path="/">
     <Home/>
     </Route>
@@ -51,10 +59,24 @@ function App() {
     <Route path="/signup">
       <SignUp/>
 
+    
     </Route>
+    <Route path="/roomform">
+      <RoomForm/>
+
+    
+    </Route>
+    <Route path="/pricepredictor">
+      <PriceRecommendation/>
 
     
     
+    </Route>
+
+    
+    <Route path="/predict">
+      <Prediction/>
+    </Route>
 
     
     </BrowserRouter>

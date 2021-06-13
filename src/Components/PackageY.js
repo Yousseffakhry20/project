@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
 import { Modal, Button } from 'react-materialize';
 import Select from "react-select";
-
+import M from 'materialize-css'
 
 
 const PackageY=()=>{
+
+    M.AutoInit()
 
     const options = [
         { value: 'Basic', label: 'Basic' },
@@ -40,7 +42,7 @@ const PackageY=()=>{
      }
 
      var totalpersonnel=parseInt(personnel,10)+parseInt(futurePersonnel,10)
-     var Area=totalpersonnel*8;
+     var Area=totalpersonnel*6;
 
      var Budget=Area*meterPrice
 
